@@ -16,8 +16,17 @@ $slickElement.slick({
   slidesToShow: 3,
   autoplay: false,
   dots: true,
- prevArrow: "<button class='prev slick-prev'><img class='left-arrow ' src='./assets/img/next3.png' alt=''></button>",
-    nextArrow: "<button class='next slick-next'><img class='right-arrow ' src='./assets/img/next4.png' alt=''></button>",
+  prevArrow: "<button class='prev slick-prev'><img class='left-arrow ' src='./assets/img/next3.png' alt=''></button>",
+  nextArrow: "<button class='next slick-next'><img class='right-arrow ' src='./assets/img/next4.png' alt=''></button>",
+  responsive: [
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+  ]
 });
 
 /**/
@@ -87,6 +96,15 @@ $(document).ready(function() {
     autoplay: true,
     prevArrow: "<button class='prev slick-prev'><img class='left-arrow ' src='./assets/img/next3.png' alt=''></button>",
     nextArrow: "<button class='next slick-next'><img class='right-arrow ' src='./assets/img/next4.png' alt=''></button>",
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
   });
 
   $('.slider_for').slick({
@@ -118,17 +136,51 @@ $(document).ready(function() {
     autoplay: true,
     prevArrow: "<button class='prev slick-prev'><img class='left-arrow ' src='./assets/img/next5.png' alt=''></button>",
     nextArrow: "<button class='next slick-next'><img class='right-arrow ' src='./assets/img/next6.png' alt=''></button>",
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      }
+    ]
   });
 
-  /*$('.slider_products').slick({
-    dots: false,
-    slidesToShow: 3,
-    autoplay: false,
-    arrows: true,
-    prevArrow: "<button class='prev slick-prev'><img class='left-arrow ' src='./assets/img/next3.png' alt=''></button>",
-    nextArrow: "<button class='next slick-next'><img class='right-arrow ' src='./assets/img/next4.png' alt=''></button>",
-  });*/
+  $('.play_btn').click(function() {
+    $('.slider_video_thuvien .slider_for .box_video > img').css('display','none');
+    $('.play_btn').css('display','none');
+  })
 
+  $('.icon_sumenu').click(function() {
+    $(this).toggleClass('active');
+    $('.main_menu').toggleClass('active');
+    $('.element_main_menu').toggleClass('active');
+  })
+
+  $('.main_menu li.show_submenu').click(function(event) {
+    if ($('.main_menu').hasClass('menu_tab')) {
+      $('.main_menu li.show_submenu').not($(this)).removeClass('active');/**/
+    }
+    $(this).toggleClass('active');
+  });
+
+  $('.slider_giaithuong').slick({
+    dots: false,
+    slidesToShow: 4,
+    autoplay: true,
+    prevArrow: "<button class='prev slick-prev'><img class='left-arrow ' src='./assets/img/next5.png' alt=''></button>",
+    nextArrow: "<button class='next slick-next'><img class='right-arrow ' src='./assets/img/next6.png' alt=''></button>",
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      }
+    ]
+  });
 
 
     
