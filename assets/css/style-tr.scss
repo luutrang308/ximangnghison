@@ -50,10 +50,26 @@ input {
 			flex-flow: row wrap;
 			justify-content: flex-end;
 			margin: 0;
+			li.show_submenu_lang {
+				&:after {
+					display: none;
+				}
+			}
 			li.show_submenu {
 				position: relative;
+				&:after {
+			    	position: absolute;
+			    	content: url(./../img/tamgiac.png);
+			    	bottom: -100px;
+				    left: 50%;
+				    transform: translate(-50%, 0);
+				    z-index: 100;
+				    opacity: 0;
+				    transition: 0.8s;
+			    }
 				.submenu_page {
 					padding: 15px;
+					padding-top: 30px;
 					opacity: 0;
 				    visibility: hidden;
 				    position: absolute;
@@ -65,13 +81,16 @@ input {
 				    top: 80px;
 				    transition: 500ms ease-out 200ms;
 				    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-				    background: #fff;
+				    background: transparent;
+
 				    li {
-				    	margin: 7px 0;
+				    	padding-top: 5px;
 				    	border-bottom: 1px solid #00178d94;
 				    	padding-bottom: 8px;
+				    	background: #fff;
+				    	padding-left: 15px;
 				    	&:last-child {
-				    		border-bottom: none;
+				    		border-bottom: 4px solid #0052A4;
 				    	}
 				    	&:hover {
 				    		a {
@@ -79,11 +98,17 @@ input {
 				    		}
 				    	}
 				    	a {
-				    		color: #00178d;
-				    		text-transform: capitalize;
-				    		padding: 0;
-				    		display: block;
-				    		width: 100%;
+				    		font-family: Roboto;
+							font-style: normal;
+							font-weight: normal;
+							font-size: 15px;
+							line-height: 18px;
+							padding-top: 6px;
+							display: flex;
+							align-items: center;
+							padding-bottom: 0;
+							color: #424242;
+							text-transform: capitalize;
 				    		&:before {
 				    			display: none;
 				    		}
@@ -92,10 +117,15 @@ input {
 				}
 				&:hover {
 					.submenu_page {
-						top: 45px;
+						top: 60px;
 					    opacity: 1;
 					    visibility: visible;
 					    display: block;
+					}
+					&:after {
+						opacity: 1;
+						transition: 0.8s;
+						bottom: -43px;
 					}
 				}
 				span.lang_pc {
@@ -126,6 +156,9 @@ input {
 				}
 			}
 			.show_menu_search {
+				&:before {
+					display: none;
+				}
 				.search_form {
 					position: relative;
 					&::placeholder {
@@ -181,12 +214,13 @@ input {
 						position: absolute;
 						content: '';
 						width: calc(100% - 30px);
-						bottom: 2px;
-						height: 2px;
+						bottom: -2px;
+						height: 4px;
 						background: #fff;
 						left: 50%;
 						transform: translate(-50% , 0);
 						opacity: 0;
+						border-radius: 10px;
 					}
 				}
 				
@@ -235,9 +269,15 @@ input {
 	}
 	.slick-prev {
 		transition: 0.5s;
+		&:before {
+			display: none;
+		}
 	}
 	.slick-next {
 		transition: 0.5s;
+		&:before {
+			display: none;
+		}
 	}
 	&:hover {
 		.slick-prev {

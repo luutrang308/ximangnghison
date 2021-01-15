@@ -56,11 +56,25 @@ input:focus::placeholder {
   justify-content: flex-end;
   margin: 0;
 }
+.section_header .row .main_menu li.show_submenu_lang:after {
+  display: none;
+}
 .section_header .row .main_menu li.show_submenu {
   position: relative;
 }
+.section_header .row .main_menu li.show_submenu:after {
+  position: absolute;
+  content: url(./../img/tamgiac.png);
+  bottom: -100px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 100;
+  opacity: 0;
+  transition: 0.8s;
+}
 .section_header .row .main_menu li.show_submenu .submenu_page {
   padding: 15px;
+  padding-top: 30px;
   opacity: 0;
   visibility: hidden;
   position: absolute;
@@ -72,34 +86,47 @@ input:focus::placeholder {
   top: 80px;
   transition: 500ms ease-out 200ms;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-  background: #fff;
+  background: transparent;
 }
 .section_header .row .main_menu li.show_submenu .submenu_page li {
-  margin: 7px 0;
+  padding-top: 5px;
   border-bottom: 1px solid #00178d94;
   padding-bottom: 8px;
+  background: #fff;
+  padding-left: 15px;
 }
 .section_header .row .main_menu li.show_submenu .submenu_page li:last-child {
-  border-bottom: none;
+  border-bottom: 4px solid #0052A4;
 }
 .section_header .row .main_menu li.show_submenu .submenu_page li:hover a {
   color: #cc423b;
 }
 .section_header .row .main_menu li.show_submenu .submenu_page li a {
-  color: #00178d;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 18px;
+  padding-top: 6px;
+  display: flex;
+  align-items: center;
+  padding-bottom: 0;
+  color: #424242;
   text-transform: capitalize;
-  padding: 0;
-  display: block;
-  width: 100%;
 }
 .section_header .row .main_menu li.show_submenu .submenu_page li a:before {
   display: none;
 }
 .section_header .row .main_menu li.show_submenu:hover .submenu_page {
-  top: 45px;
+  top: 60px;
   opacity: 1;
   visibility: visible;
   display: block;
+}
+.section_header .row .main_menu li.show_submenu:hover:after {
+  opacity: 1;
+  transition: 0.8s;
+  bottom: -43px;
 }
 .section_header .row .main_menu li.show_submenu span.lang_pc {
   display: flex;
@@ -122,6 +149,9 @@ input:focus::placeholder {
 .section_header .row .main_menu li.show_submenu span.lang_pc select option {
   background: #000;
   font-family: Oswald;
+}
+.section_header .row .main_menu .show_menu_search:before {
+  display: none;
 }
 .section_header .row .main_menu .show_menu_search .search_form {
   position: relative;
@@ -173,12 +203,13 @@ input:focus::placeholder {
   position: absolute;
   content: "";
   width: calc(100% - 30px);
-  bottom: 2px;
-  height: 2px;
+  bottom: -2px;
+  height: 4px;
   background: #fff;
   left: 50%;
   transform: translate(-50%, 0);
   opacity: 0;
+  border-radius: 10px;
 }
 
 .lang_mobi .lang_item {
@@ -224,8 +255,14 @@ input:focus::placeholder {
 .section_slider_banner .slick-prev {
   transition: 0.5s;
 }
+.section_slider_banner .slick-prev:before {
+  display: none;
+}
 .section_slider_banner .slick-next {
   transition: 0.5s;
+}
+.section_slider_banner .slick-next:before {
+  display: none;
 }
 .section_slider_banner:hover .slick-prev {
   left: 170px;

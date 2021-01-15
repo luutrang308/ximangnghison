@@ -196,12 +196,21 @@
   .submenu_page_mobi {
     display: none !important;
   }
+  .logo.logo_mobi {
+    display: none;
+  }
 }
 @media screen and (max-width: 992px) {
   .description , .countdown_about .col_counter .counter-title ,
   .slider_news .item .content > p , .element_resunlt_search .list_resunlt .item p ,
   .section_footer .footer_item p ,.section_footer .footer_item ul li a , .section_footer .footer_item:nth-child(1) ul li p {
     font-size: 14px;
+  }
+  .section_header .row .main_menu li.show_submenu:after {
+    display: none;
+  }
+  .section_header .row .main_menu li.show_submenu .submenu_page li:last-child {
+    border-bottom: none;
   }
   .slider_news .item .content > a {
     font-size: 16px;
@@ -335,6 +344,7 @@
   }
   .section_header .row .main_menu li.show_submenu .submenu_page li a {
     color: #fff;
+    text-transform: capitalize;
   }
   .section_header .row .main_menu li.show_submenu .submenu_page li a img {
     margin-left: 15px;
@@ -351,6 +361,7 @@
   }
   .section_header .row .main_menu li.show_submenu .submenu_page li {
     padding-left: 15px;
+    background: transparent;
   }
   .section_header .row .main_menu>li>a {
     padding-left: 15px;

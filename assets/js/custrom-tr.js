@@ -88,6 +88,8 @@ $(document).ready(function() {
     dots: false,
     slidesToShow: 1,
     autoplay: true,
+    prevArrow: "<button class='prev slick-prev'><img class='left-arrow ' src='./assets/img/next12.png' alt=''></button>",
+    nextArrow: "<button class='next slick-next'><img class='right-arrow ' src='./assets/img/next13.png' alt=''></button>",
   });
 
   $('.element_slider_img').slick({
