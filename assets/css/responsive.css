@@ -26,6 +26,14 @@
 
 /* 1024 */
 @media screen and (max-width: 1200px)  and (min-width: 992px) {
+  .description , .countdown_about .col_counter .counter-title ,
+  .slider_news .item .content > p , .element_resunlt_search .list_resunlt .item p ,
+  .section_footer .footer_item p ,.section_footer .footer_item ul li a , .section_footer .footer_item:nth-child(1) ul li p {
+    font-size: 14px;
+  }
+  .slider_news .item .content > a {
+    font-size: 16px;
+  }
   .contact-form .info .form-info h2 {
     font-size: 18px;
   }
@@ -75,6 +83,14 @@
 /*1366*/
 
 @media screen and (max-width: 1400px) and (min-width: 1200px) {
+  .description , .countdown_about .col_counter .counter-title ,
+  .slider_news .item .content > p , .element_resunlt_search .list_resunlt .item p ,
+  .section_footer .footer_item p ,.section_footer .footer_item ul li a , .section_footer .footer_item:nth-child(1) ul li p {
+    font-size: 14px;
+  }
+  .slider_news .item .content > a {
+    font-size: 16px;
+  }
   .title h2 {
     font-size: 30px;
   }
@@ -182,6 +198,14 @@
   }
 }
 @media screen and (max-width: 992px) {
+  .description , .countdown_about .col_counter .counter-title ,
+  .slider_news .item .content > p , .element_resunlt_search .list_resunlt .item p ,
+  .section_footer .footer_item p ,.section_footer .footer_item ul li a , .section_footer .footer_item:nth-child(1) ul li p {
+    font-size: 14px;
+  }
+  .slider_news .item .content > a {
+    font-size: 16px;
+  }
   .element_slider_products {
     overflow: hidden;
   }
