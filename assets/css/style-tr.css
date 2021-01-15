@@ -101,8 +101,33 @@ input:focus::placeholder {
   visibility: visible;
   display: block;
 }
+.section_header .row .main_menu li.show_submenu span.lang_pc {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+.section_header .row .main_menu li.show_submenu span.lang_pc span img {
+  display: none;
+}
+.section_header .row .main_menu li.show_submenu span.lang_pc span.active img {
+  display: block;
+}
+.section_header .row .main_menu li.show_submenu span.lang_pc select {
+  background: transparent;
+  border: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: Oswald;
+}
+.section_header .row .main_menu li.show_submenu span.lang_pc select option {
+  background: #000;
+  font-family: Oswald;
+}
 .section_header .row .main_menu .show_menu_search .search_form {
   position: relative;
+}
+.section_header .row .main_menu .show_menu_search .search_form::placeholder {
+  color: #fff;
 }
 .section_header .row .main_menu .show_menu_search .search_form .btn_search {
   position: absolute;
@@ -155,22 +180,35 @@ input:focus::placeholder {
   transform: translate(-50%, 0);
   opacity: 0;
 }
-.section_header .row .main_menu li:last-child span span img {
+
+.lang_mobi .lang_item {
+  width: 100%;
+  display: block;
+  height: 50px;
+  background: #0E1F4C;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+}
+.lang_mobi .lang_item img {
+  margin-left: 15px;
+}
+
+.close_mobi {
   display: none;
 }
-.section_header .row .main_menu li:last-child span span.active img {
-  display: inherit;
-}
-.section_header .row .main_menu li:last-child span select {
-  background: transparent;
-  border: none;
-  color: #fff;
-  text-transform: uppercase;
-  font-family: Oswald;
-}
-.section_header .row .main_menu li:last-child span select option {
-  background: #000;
-  font-family: Oswald;
+
+.section_header .row .main_menu .show_menu_search input::placeholder {
+  color: transparent;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #FFFFFF;
 }
 
 .section_slider_banner {
@@ -1567,7 +1605,7 @@ input:focus::placeholder {
   display: block;
   width: 100%;
   height: 2px;
-  background: #fff;
+  background: #071F5D;
   margin: 5px 0;
 }
 

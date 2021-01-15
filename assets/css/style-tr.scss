@@ -98,10 +98,39 @@ input {
 					    display: block;
 					}
 				}
+				span.lang_pc {
+					display: flex;
+					flex-flow: row wrap;
+					align-items: center;
+					span {
+						img {
+							display: none;
+						}
+					}
+					span.active {
+						img {
+							display: block;
+						}
+					}
+					select {
+					    background: transparent;
+					    border: none;
+					    color: #fff;
+					    text-transform: uppercase;
+					    font-family: Oswald;
+					    option {
+					    	background: #000;
+					    	font-family: Oswald;
+					    }
+					}
+				}
 			}
 			.show_menu_search {
 				.search_form {
 					position: relative;
+					&::placeholder {
+						color: #fff;
+					}
 					.btn_search {
 						position: absolute;
 						right: -100px;
@@ -160,36 +189,41 @@ input {
 						opacity: 0;
 					}
 				}
-				&:last-child {
-					span {
-						span {
-							img {
-								display: none;
-							}
-						}
-						span.active {
-							img {
-								display: inherit;
-							}
-						}
-						select {
-						    background: transparent;
-						    border: none;
-						    color: #fff;
-						    text-transform: uppercase;
-						    font-family: Oswald;
-						    option {
-						    	background: #000;
-						    	font-family: Oswald;
-						    }
-						}
-					}
-				}
+				
 			}
 		}
 	}
 }
+.lang_mobi {
+	.lang_item {
+		width: 100%;
+		display: block;
+		height: 50px;
+		background: #0E1F4C;
+		font-family: Lato;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		line-height: 17px;
+		color: #FFFFFF;
+		img {
+			margin-left: 15px;
+		}
+	}
+}
+.close_mobi {
+	display: none;
+}
+.section_header .row .main_menu .show_menu_search input::placeholder {
+	color: transparent;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 16px;
 
+	color: #FFFFFF;
+}
 .section_slider_banner {
 	width: 100%;
 	overflow: hidden;
@@ -1688,7 +1722,7 @@ input {
 		display: block;
 		width: 100%;
 		height: 2px;
-		background: #fff;
+		background: #071F5D;
 		margin: 5px 0;
 	}
 }

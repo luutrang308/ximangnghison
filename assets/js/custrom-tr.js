@@ -149,8 +149,8 @@ $(document).ready(function() {
       {
         breakpoint: 992,
         settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2
+          slidesToShow: 3,
+          slidesToScroll: 3
         }
       }
     ]
@@ -173,6 +173,12 @@ $(document).ready(function() {
     }
     $(this).toggleClass('active');
   });
+
+  $('.close_mobi').click(function(){
+    $('.main_menu').toggleClass('active');
+    $('.icon_sumenu').toggleClass('active');
+    $('.element_main_menu').removeClass('active');
+  })
 
   $('.slider_giaithuong').slick({
     dots: false,
@@ -258,6 +264,12 @@ $(document).ready(function() {
   $('.element_vieclam_box .item').click(function(event) {
     if ($('.element_vieclam_box').hasClass('element_vieclam_box_click')) {
       $('.element_vieclam_box .item').not($(this)).removeClass('active');/**/
+    }
+    $(this).toggleClass('active');
+  });
+  $('.section_footer .row .footer_item').click(function(event) {
+    if ($('.section_footer .row').hasClass('footer_mobi')) {
+      $('.section_footer .row .footer_item').not($(this)).removeClass('active');/**/
     }
     $(this).toggleClass('active');
   });

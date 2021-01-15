@@ -107,15 +107,15 @@
 
 }
 
-/* 375 */
-@media screen and (min-width: 992px) {
-  .icon_sumenu {
-    display: none;
-  }
-}
 
 /* 768 */
 @media screen and (max-width: 992px) and (min-width: 570px) {
+  .section_header .row .main_menu .show_menu_search input::placeholder {
+    color: #fff !important;
+  }
+  .lang_mobi {
+    display: block;
+  }
   .banner_page h2 {
     font-size: 18px;
     margin: 0;
@@ -168,30 +168,95 @@
   }
 }
 
+
+/* 992 */
+@media screen and (min-width: 992px) {
+  .icon_sumenu {
+    display: none;
+  }
+  .lang_mobi {
+    display: none;
+  }
+  .submenu_page_mobi {
+    display: none !important;
+  }
+}
 @media screen and (max-width: 992px) {
+  .element_slider_products {
+    overflow: hidden;
+  }
+  .slider_partner .item img {
+    max-width: 70%;
+  }
+  .logo.logo_mobi {
+    display: block;
+  }
+  .submenu_page_mobi {
+    display: block;
+  }
+  .lang_pc {
+    display: none !important;
+  }
+  .close_mobi {
+    display: block;
+    background: #fff;
+    width: 100%;
+    height: 48px;
+    text-align: center;
+    line-height: 47px;
+    margin: 2px 0;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+
+    color: #00113D;
+  }
+  .close_mobi img {
+    margin-right: 10px;
+  }
   .element_main_menu.active {
     height: 100vh;
     overflow-y: scroll;
+    margin-top: 15px;
   }
   .section_header {
-    background: #00178d;
+    background: #fff;
     position: inherit;
   }
   .section_header.bg_color {
     position: fixed;
+    background: #fff;
   }
   .section_header .row .main_menu li {
     width: 100%;
   }
   .section_header .row .main_menu {
-    padding: 10px 15px;
+    padding: 80px 15px 10px 15px;
+    position: relative;
     display: none;
+  }
+  .section_header .row .main_menu li.show_submenu.show_menu_search {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    height: 45px;
+    border-bottom: none;
+    background: transparent;
   }
   .section_header .row .main_menu.active {
     display: flex;
+    background: #000E32;
+    padding-bottom: 100vh;
   }
   .section_header .row .main_menu .show_menu_search input {
     width: 100%;
+    border-radius: 60px;
+    background: transparent;
+    border: 1px solid #fff;
+  }
+  .section_header .row .main_menu .show_menu_search .search_form .btn_search img {
+    filter: inherit;
   }
   .section_header .row .main_menu .show_menu_search .submenu_page {
     left: 0 !important;
@@ -200,11 +265,16 @@
     display: none;
   }
   .section_header .row .main_menu li.show_submenu.show_menu_search .submenu_page {
-      /*top: -32px !important;*/
+      width: 100%;
       display: block;
+      padding: 0 15px;
+      background: transparent;
+  }
+  .section_header .row .main_menu li.show_submenu.show_menu_search:before {
+    display: none;
   }
   .section_header .row .main_menu li.show_submenu:hover .submenu_page {
-    display: block !important;
+    /*display: block !important;*/
     /*top: -32px !important;*/
   }
   .section_header .row .main_menu li.show_submenu.show_menu_search.active .submenu_page {
@@ -223,7 +293,7 @@
     opacity: 1;
     visibility: visible;
     top: 0;
-    background: #ffffff0f;
+    background: #0E1F4D;
     display: none;
   }
   .section_header .row .main_menu li.show_submenu.active .submenu_page {
@@ -241,7 +311,9 @@
   }
   .section_header .row .main_menu li.show_submenu .submenu_page li a {
     color: #fff;
-    padding-left: 15px;
+  }
+  .section_header .row .main_menu li.show_submenu .submenu_page li a img {
+    margin-left: 15px;
   }
   .section_header .row .main_menu li.show_submenu.active:before {
     transform: rotateZ(135deg);
@@ -249,6 +321,15 @@
   .section_header .row .main_menu li {
     padding: 10px 0;
     border-bottom: 1px solid #ffffff73;
+  }
+  .section_header .row .main_menu>li {
+    background: #071F5D;
+  }
+  .section_header .row .main_menu li.show_submenu .submenu_page li {
+    padding-left: 15px;
+  }
+  .section_header .row .main_menu>li>a {
+    padding-left: 15px;
   }
   .section_header .row .main_menu li:last-child {
     border-bottom: none;
@@ -273,10 +354,45 @@
   }
   .section_header .row .logo {
     margin-left: 15px;
+    display: none;
+  }
+  .section_header .row .logo.logo_mobi {
+    display: block;
   }
   .section_footer .footer_item {
     width: 100% !important;
     padding: 10px 15px;
+  }
+  .section_footer .footer_item ul , .section_footer .footer_item p ,
+  .section_footer .footer_item .form_footer {
+    display: none;
+  }
+  .section_footer .footer_item:nth-child(1) ul , .section_footer .footer_item:nth-child(1) p {
+    display: block !important;
+  }
+  .section_footer .footer_item.active ul , .section_footer .footer_item.active p ,
+  .section_footer .footer_item.active .form_footer{
+    display: block;
+  }
+  .section_footer .footer_item h4 {
+    position: relative;
+  }
+  .section_footer .footer_item h4:before {
+    position: absolute;
+    content: '';
+    width: 5px;
+    height: 5px;
+    border-top: 1px solid #fff;
+    border-right: 1px solid #fff;
+    transform: rotateZ(45deg);
+    right: 15px;
+    top: 10px;
+  }
+  .section_footer .footer_item.active h4:before {
+    transform: rotateZ(135deg);
+  }
+  .section_footer .footer_item:nth-child(1) h4:before {
+    display: none;
   }
   .video , .element_about {
     width: 100%;
@@ -284,14 +400,17 @@
     margin-left: 0;
   }
   .video:before {
-    display: none;
+    left: 15px;
+    top: 15px;
+    width: 85%;
   }
   .section_about {
     padding: 30px 0;
     overflow-y: hidden;
   }
   .element_about {
-    margin-top: 30px;
+    margin-bottom: 30px;
+    order: 1;
   }
   .element_content, .element_slider_img {
     width: 100%;
@@ -312,14 +431,13 @@
   }
   .section_products {
     padding: 30px 15px;
-    overflow-y: hidden;
+    overflow: hidden;
   }
   .element_slider_products .progress {
     bottom: 0;
   }
   .element_slider_products .pagingInfo {
-    bottom: -45px;
-    left: 43%;
+    bottom: 80px;
   }
   .section_news {
     padding: 30px 0px;
@@ -391,8 +509,10 @@
     right: 0;
   }
   .video {
-    height: 350px;
-    overflow: hidden;
+    height: 440px;
+    order: 2;
+    padding-left: 30px;
+    margin-bottom: 30px;
   }
   .video .thumbnail_img {
     width: 100%;
@@ -648,6 +768,10 @@
     height: 40px;
   }
   .element_slider_products .progress {
-    width: 100%;
+    width: 70%;
+    bottom: 45px;
+  }
+  .section_header .row .main_menu .show_menu_search input::placeholder {
+    color: #fff;
   }
 }
