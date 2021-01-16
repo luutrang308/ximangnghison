@@ -230,6 +230,7 @@ input:focus::placeholder {
 
 .close_mobi {
   display: none;
+  margin-top: 10px !important;
 }
 
 .section_header .row .main_menu .show_menu_search input::placeholder {
