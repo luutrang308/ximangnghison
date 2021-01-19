@@ -15,7 +15,7 @@ $slickElement.slick({
   infinite: false,
   slidesToShow: 3,
   autoplay: false,
-  slidesToScroll: 1,
+  slidesToScroll: 3,
   dots: true,
   prevArrow: "<button class='prev slick-prev'><img class='left-arrow ' src='./assets/img/next3.png' alt=''></button>",
   nextArrow: "<button class='next slick-next'><img class='right-arrow ' src='./assets/img/next4.png' alt=''></button>",
@@ -44,7 +44,7 @@ $(document).ready(function() {
   var $progressBarLabel = $( '.slider__label' );
   
   $slider.on('beforeChange', function(event, slick, currentSlide, nextSlide) {   
-    var calc = ( (nextSlide) / (slick.slideCount-1) ) * 100;
+    var calc = ( ( (nextSlide) / (slick.slideCount-1) ) * 100 ) ;
     console.log(currentSlide);
     $progressBar
     .css('background-size', calc + '% 100%')
@@ -216,7 +216,7 @@ $(document).ready(function() {
     nextArrow: "<button class='next slick-next'><img class='right-arrow ' src='./assets/img/next4.png' alt=''></button>",
   });
   $('.slider_nav_pro').slick({
-    slidesToShow: 3,
+    slidesToShow: 5,
     slidesToScroll: 1,
     asNavFor: '.slider_for_pro',
     dots: false,

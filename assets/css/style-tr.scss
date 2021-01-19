@@ -73,8 +73,8 @@ input {
 					opacity: 0;
 				    visibility: hidden;
 				    position: absolute;
-				    left: 0px;
-				    min-width: 222px;
+				    left: 14px;
+				    min-width: 180px;
 				    list-style: none;
 				    padding: 0px;
 				    z-index: 99;
@@ -617,6 +617,7 @@ input {
 		transition: 0.3s;
 		&:hover {
 			border-bottom: 4px solid #CC423B;
+		    box-shadow: 0px 9px 17px rgba(0, 0, 0, 0.15);
 			.content {
 				>a {
 					color: #00178D;
@@ -900,7 +901,9 @@ input {
 .element_thuvien {
 	margin-top: 30px;
 }
-
+.nav-tabs > li {
+	margin: 0 10px;
+}
 .nav-tabs.nav_tabs > li > a {
 	font-family: Oswald;
 	font-style: normal;
@@ -909,6 +912,8 @@ input {
 	line-height: 26px;
 	border: none;
 	color: #FFFFFF;
+	padding-left: 0;
+	padding-right: 0;
 }
 .nav-tabs.nav_tabs > li.active > a {
     color: #fff;
@@ -1119,7 +1124,7 @@ input {
 			font-size: 16px;
 			line-height: 24px;
 			color: #FFFFFF;
-			margin-bottom: 10px;
+			margin-bottom: 15px;
 		}
 		.form_footer {
 			position: relative;
@@ -1160,7 +1165,7 @@ input {
 		}
 		ul {
 			li {
-				margin: 8px 0;
+				margin: 12px 0;
 				a {
 					font-family: Roboto;
 					font-style: normal;
@@ -1280,7 +1285,7 @@ input {
 	bottom: 150px;
 	z-index: 1000;
 	a {
-		padding: 20px 0;
+		padding: 10px 0;
 	}
 	.icon_message {
 		img {
@@ -1476,7 +1481,7 @@ input {
 		    bottom: 0;
 		    left: 0;
 		    border-radius: 0;
-		    font-family: Oswald;
+		    font-family: OswaldLight;
 		    font-style: normal;
 		    font-weight: normal;
 		    font-size: 24px;
@@ -1506,6 +1511,7 @@ input {
 	.slick-prev , .slick-next {
 		opacity: 0;
 		transition: 0.3s;
+		top: 42%;
 	}
 	&:hover {
 		.slick-prev , .slick-next {
@@ -1671,7 +1677,7 @@ input {
 				font-weight: normal;
 				font-size: 21px;
 				line-height: 25px;
-				color: #3C3C3C;
+				color: #00178d;
 			}
 			.date_author {
 				display: flex;
@@ -1800,7 +1806,7 @@ input {
 	}
 	h2 {
 		position: absolute;
-		font-family: SVN-Poppins;
+		font-family: 'Oswald';
 		font-style: normal;
 		font-weight: bold;
 		font-size: 36px;
@@ -1939,7 +1945,7 @@ input {
 }
 .info-fw{
 	width: 100%;
-	margin-top: 110px;
+	margin-top: 113px;
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-between;
@@ -2254,7 +2260,7 @@ input {
 		border: 1px solid #E3E3E3;
 		box-sizing: border-box;
 		.img {
-			height: 70px;
+			height: 100px;
 			overflow: hidden;
 			padding: 10px;
 			img {
@@ -2319,7 +2325,7 @@ input {
     line-height: 150.69%;
     color: #00178D;
 }
-.btn_lienhe {
+/*.btn_lienhe {
 	background: #00178D;
     box-sizing: border-box;
     border-radius: 0;
@@ -2343,7 +2349,7 @@ input {
     &:hover {
     	color: #fff;
     }
-}
+}*/
 
 .title_style_1 {
 	font-family: Oswald;
@@ -2671,7 +2677,40 @@ input {
 	    padding: 14px;
     }
     &:hover {
-    	color: #fff;
+    	color: #fff !important;
+	    background: #00178D;
+	    img {
+	    	background: #cc423b;
+	    }
+    }
+}
+.btn_lienhe {
+	background: transparent;
+	border: 1px solid #00178D;
+    box-sizing: border-box;
+    border-radius: 0;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #00178D;
+    padding: 0;
+    overflow: hidden;
+    padding-right: 15px;
+    margin-top: 30px;
+    img {
+	    margin-right: 10px;
+	    background: #00178D;
+	    padding: 14px;
+    }
+    &:hover {
+    	color: #fff !important;
+	    background: #00178D;
+	    img {
+	    	background: #cc423b;
+	    }
     }
 }
 
@@ -2706,7 +2745,7 @@ input {
 		}
 		.box_hover {
 			.btn_see_detail {
-				font-family: Oswald;
+				font-family: OswaldLight;
 				font-style: normal;
 				font-weight: normal;
 				font-size: 16px;
@@ -2783,6 +2822,7 @@ input {
 					    font-size: 16px;
 					    line-height: 150.5%;
 					    color: #424242;
+					    text-align: left;
 					}
 					.description {
 					    text-align: justify;
@@ -2967,7 +3007,7 @@ input {
 			font-size: 16px;
 			line-height: 45px;
 			color: #424242;
-			background: #EBEEFF;
+			background: #EFEFEF;
 			display: block;
 			width: 100%;
 			height: 100%;
@@ -2980,6 +3020,7 @@ input {
 		a {
 			border-left: 4px solid #00178D;
 			color: #00178D;
+			background: #EEF1FF;
 		}
 	}
 }
@@ -3259,7 +3300,7 @@ input {
 
 .element_vieclam_box {
 	border-left: 1px solid #CC423B;
-	padding: 50px 0;
+	padding: 10px 0;
 	.item {
 		padding-left: 60px;
 		margin: 15px 0;
@@ -3359,6 +3400,7 @@ input {
 }
 
 .element_dangtuyendung {
+	margin-top: 30px;
 	.item {
 		display: flex;
 		flex-flow: row wrap;
@@ -3368,6 +3410,20 @@ input {
 		border-bottom: 1px solid #E2E2E2;
 		&:last-child {
 			border: none;
+		}
+		&:hover {
+			.content {
+				p {
+					color: #00178d;
+					transition: 0.3s;
+				}
+			}
+			.btn_xemchitiet1 {
+				background: #cc423b;
+				color: #fff;
+				border: 1px solid #cc423b;
+				transition: 0.3s;
+			}
 		}
 		.img {
 			width: 100px;
@@ -3388,6 +3444,7 @@ input {
 				font-size: 18px;
 				line-height: 139.99%;
 				color: #424242;
+				transition: 0.3s;
 			}
 			.list_span {
 				display: flex;
@@ -3444,6 +3501,7 @@ input {
 			align-items: center;
 			text-align: center;
 			color: #424242;
+			transition: 0.3s;
 		}
 	}
 }
@@ -3480,9 +3538,9 @@ input {
 		.content {
 			width: calc(100% - 115px);
 			a {
-				font-family: SVN-Poppins;
+				font-family: Roboto;
 				font-style: normal;
-				font-weight: bold;
+				font-weight: normal;
 				font-size: 16px;
 				line-height: 139.99%;
 				color: #424242;
@@ -3496,7 +3554,7 @@ input {
 	background: #00178D;
 	height: 60px;
 	h2 {
-		font-family: SVN-Poppins;
+		font-family: 'Oswald';
 		font-style: normal;
 		font-weight: bold;
 		font-size: 30px;
@@ -3856,7 +3914,7 @@ input {
 			cursor: pointer;
 			.tex{
 				h3{
-					color: #8c4e09;
+					color: #00178d;
 					transition: 0.5s;
 					text-decoration: none;
 				}
@@ -4181,7 +4239,7 @@ input {
 	justify-content: space-between;
 	align-items: center;
 	.col_counter {
-		width: 32%;
+		width: auto;
 		text-align: center;
 		.counter-number {
 		    font-family: Oswald;
