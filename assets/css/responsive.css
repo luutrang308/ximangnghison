@@ -218,7 +218,7 @@
   .element_slider_products {
     overflow: hidden;
     padding-top: 0;
-    padding-bottom: 0;
+    padding-bottom: 50px;
   }
   .element_detailproduct .slider_nav_pro .img {
     height: 50px;
@@ -482,7 +482,7 @@
     bottom: 0;
   }
   .element_slider_products .pagingInfo {
-    bottom: 80px;
+    bottom: 50px;
   }
   .section_news {
     padding: 30px 0px;
@@ -814,7 +814,7 @@
   }
   .element_slider_products .progress {
     width: 70%;
-    bottom: 45px;
+    bottom: 15px;
   }
   .section_header .row .main_menu .show_menu_search input::placeholder {
     color: #fff;
