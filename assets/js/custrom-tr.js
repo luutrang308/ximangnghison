@@ -252,8 +252,8 @@ $(document).ready(function() {
     dots: false,
     slidesToShow: 1,
     autoplay: false,
-    prevArrow: "<button class='prev slick-prev'><img class='left-arrow ' src='./assets/img/next10.png' alt=''></button>",
-    nextArrow: "<button class='next slick-next'><img class='right-arrow ' src='./assets/img/next11.png' alt=''></button>",
+    prevArrow: "<button class='prev slick-prev'><img class='left-arrow ' src='./assets/img/next3.png' alt=''></button>",
+    nextArrow: "<button class='next slick-next'><img class='right-arrow ' src='./assets/img/next4.png' alt=''></button>",
   });
   $('.list_news_slier').slick({
     dots: false,

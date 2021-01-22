@@ -530,6 +530,9 @@ input {
 	align-items: center;
 	background: url(./../img/bg.png);
 	background-size: cover;
+	.text-light h2 {
+		background: transparent;
+	}
 }
 
 .title_seeall {
@@ -573,6 +576,9 @@ input {
 		max-width: 100%;
 		height: 100%;
 		z-index: 0;
+	}
+	.title h2 {
+		background: transparent;
 	}
 }
 
@@ -713,6 +719,7 @@ input {
 			transition: 0.3s;
 			z-index: 1;
 			opacity: 0;
+			top: 44%;
 			&:before {
 				display: none;
 			}
@@ -721,6 +728,7 @@ input {
 			transition: 0.3s;
 			z-index: 1;
 			opacity: 0;
+			top: 44%;
 			&:before {
 				display: none;
 			}
@@ -900,6 +908,9 @@ input {
 		top: 0;
 		left: 0;
 		z-index: -1;
+	}
+	.text-light h2 {
+		background: transparent;
 	}
 }
 .element_thuvien {
@@ -1097,6 +1108,9 @@ input {
 .section_partner {
 	background: #F0F0F0;
 	padding: 60px 0;
+	.title h2 {
+		background: transparent;
+	}
 }
 
 .section_footer {
@@ -2160,6 +2174,9 @@ input {
 	padding: 60px 0;
 	overflow-y: hidden;
 	background: #F0F0F0;
+	.title h2 {
+		background: transparent;
+	}
 }
 
 .lemenent_form {
@@ -2244,6 +2261,9 @@ input {
 			top: 0;
 			left: 0;
 		}
+	}
+	.title h2 {
+		background: transparent;
 	}
 }
 
@@ -3003,6 +3023,12 @@ input {
 	.element_list_news {
 		margin-top: 15px;
 	}
+
+}
+.section_list_news , .section_view_news {
+	.title h2 {
+		background: transparent;
+	}
 }
 
 .sidebar_page {
@@ -3281,7 +3307,7 @@ input {
 
 .element_vieclam {
 	width: 48%;
-	padding: 60px 0;
+	padding: 0;
 	p {
 		strong {
 			font-family: Roboto;
@@ -3527,6 +3553,9 @@ input {
 .section_dangtuyendung {
 	padding: 60px 0;
 	background: #F6F6F6;
+	.title h2 {
+		background: transparent;
+	}
 }
 .table_item {
 	width: 100%;
@@ -3576,7 +3605,7 @@ input {
 		font-family: 'Oswald';
 		font-style: normal;
 		font-weight: bold;
-		font-size: 30px;
+		font-size: 24px;
 		line-height: 56px;
 		text-align: center;
 		color: #FFFFFF;

@@ -517,6 +517,9 @@ input:focus::placeholder {
   background: url(./../img/bg.png);
   background-size: cover;
 }
+.section_slider_post .text-light h2 {
+  background: transparent;
+}
 
 .title_seeall {
   display: flex;
@@ -561,6 +564,9 @@ input:focus::placeholder {
   max-width: 100%;
   height: 100%;
   z-index: 0;
+}
+.section_news .title h2 {
+  background: transparent;
 }
 
 .slider_news {
@@ -692,6 +698,7 @@ input:focus::placeholder {
   transition: 0.3s;
   z-index: 1;
   opacity: 0;
+  top: 44%;
 }
 .slider_img_thuvien .slider_for .slick-prev:before {
   display: none;
@@ -700,6 +707,7 @@ input:focus::placeholder {
   transition: 0.3s;
   z-index: 1;
   opacity: 0;
+  top: 44%;
 }
 .slider_img_thuvien .slider_for .slick-next:before {
   display: none;
@@ -850,6 +858,9 @@ input:focus::placeholder {
   top: 0;
   left: 0;
   z-index: -1;
+}
+.section_thuvien .text-light h2 {
+  background: transparent;
 }
 
 .element_thuvien {
@@ -1046,6 +1057,9 @@ input:focus::placeholder {
 .section_partner {
   background: #F0F0F0;
   padding: 60px 0;
+}
+.section_partner .title h2 {
+  background: transparent;
 }
 
 .section_footer {
@@ -2020,6 +2034,9 @@ input:focus::placeholder {
   overflow-y: hidden;
   background: #F0F0F0;
 }
+.section_giaithuong .title h2 {
+  background: transparent;
+}
 
 .lemenent_form {
   padding: 55px 0;
@@ -2103,6 +2120,9 @@ input:focus::placeholder {
   position: absolute;
   top: 0;
   left: 0;
+}
+.section_contact .title h2 {
+  background: transparent;
 }
 
 .mt_0 {
@@ -2829,6 +2849,10 @@ input:focus::placeholder {
   margin-top: 15px;
 }
 
+.section_list_news .title h2, .section_view_news .title h2 {
+  background: transparent;
+}
+
 .sidebar_page {
   width: 23%;
   margin-left: auto;
@@ -3090,7 +3114,7 @@ input:focus::placeholder {
 
 .element_vieclam {
   width: 48%;
-  padding: 60px 0;
+  padding: 0;
 }
 .element_vieclam p strong {
   font-family: Roboto;
@@ -3324,6 +3348,9 @@ input:focus::placeholder {
   padding: 60px 0;
   background: #F6F6F6;
 }
+.section_dangtuyendung .title h2 {
+  background: transparent;
+}
 
 .table_item {
   width: 100%;
@@ -3371,7 +3398,7 @@ input:focus::placeholder {
   font-family: "Oswald";
   font-style: normal;
   font-weight: bold;
-  font-size: 30px;
+  font-size: 24px;
   line-height: 56px;
   text-align: center;
   color: #FFFFFF;
