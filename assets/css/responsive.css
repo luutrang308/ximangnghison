@@ -647,7 +647,23 @@
   }
   .element_cocau_content , .cocau_img {
     width: 100%;
-    overflow-y: hidden;
+    overflow: hidden;
+  }
+  .element_cocau_content {
+    padding-top: 0;
+  }
+  .slider_list_news .box_new .content a , .list_news .box_new .content a {
+    font-size: 16px;
+  }
+  .date_time span {
+    font-size: 14px;
+  }
+  .slider_list_news .box_new .content p {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .section-info-page {
+    padding-bottom: 0;
   }
   .cocau_img img {
     max-width: 100%;
@@ -697,6 +713,7 @@
   }
   .section_view_news .img_news , .element_news_item , .element_list_item_news {
     width: 100%;
+    margin: 15px 0;
   }
   .section_view_news .row .element_list_item_news {
     position: inherit;
@@ -704,6 +721,7 @@
     bottom: 0;
     right: 0;
     margin-top: 25px;
+    left: 0;
   }
   .element_news_item .description {
     margin: 0;
@@ -742,6 +760,18 @@
   }
   .box_new_inline .content a {
     -webkit-line-clamp: 1;
+    font-size: 16px;
+  }
+  .banner_page h2 span:before {
+    width: 60%;
+    height: 2px;
+  }
+  .element_vieclam_box .item .title_click h2 , .element_dangtuyendung .item .content > p {
+    font-size: 16px;
+  }
+  .box_new_inline .content p {
+    font-size: 16px;
+    line-height: 20px;
   }
   .box_new_inline .date_time {
     margin-bottom: 0;

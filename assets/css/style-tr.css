@@ -2720,7 +2720,7 @@ input:focus::placeholder {
 }
 
 .section_view_news_style_2 .element_list_item_news {
-  left: 0;
+  left: -15px;
 }
 .section_view_news_style_2 .element_news_item {
   margin-right: auto;
