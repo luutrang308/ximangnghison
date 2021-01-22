@@ -854,7 +854,8 @@
     width: 100%;
   }
   .nav-tabs > li {
-    width: 26%;
+    width: 32%;
+    margin: 0;
   }
   .nav-tabs.nav_tabs li a {
     text-align: center;
