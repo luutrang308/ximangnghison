@@ -414,6 +414,10 @@ input {
 		text-transform: uppercase;
 		color: #00178D;
 		margin: 0;
+	    width: auto;
+	    display: table-cell;
+	    background: #fff;
+	    padding-right: 20px;
 	}	
 }
 .description {
@@ -902,7 +906,7 @@ input {
 	margin-top: 30px;
 }
 .nav-tabs > li {
-	margin: 0 10px;
+	margin: 0 20px;
 }
 .nav-tabs.nav_tabs > li > a {
 	font-family: Oswald;
@@ -1282,7 +1286,7 @@ input {
 	position: fixed;
 	display: grid;
 	right: 15%;
-	bottom: 150px;
+	bottom: 50px;
 	z-index: 1000;
 	a {
 		padding: 10px 0;
@@ -1396,6 +1400,13 @@ input {
 	&:hover {
 		.box_hover {
 			opacity: 1;	
+		}
+		.box_basic {
+			.img {
+				span {
+					opacity: 0;
+				}
+			}
 		}
 	}
 	.box_basic {
@@ -1924,7 +1935,6 @@ input {
 }
 
 .section-info-page{
-	background: #F6F6F6;
     z-index: -3;
     padding-bottom: 50px;
 	.container{
@@ -2125,7 +2135,7 @@ input {
 			opacity: 1;
 		}
 		.slick-next {
-			right: 19px;
+			right: 0px;
 		}
 		.slick-prev {
 			left: 0;
@@ -2136,6 +2146,14 @@ input {
 	}
 	.slick-prev:before, .slick-next:before {
 		display: none;
+	}
+	.item {
+		img {
+			margin: auto;
+		}
+	}
+	.slick-list {
+		margin: 0 -15px;
 	}
 }
 .section_giaithuong {
@@ -2370,6 +2388,7 @@ input {
 	span {
 		background: #fff;
 		z-index: 1;
+		padding-right: 20px;
 	}
 }
 .element_content_detail {
@@ -2596,7 +2615,7 @@ input {
 }
 
 .page_color {
-	background: #E5E5E5;
+	background: #F6F6F6;
 	.title_style_1 span {
 		background: transparent;
 	}
@@ -3838,7 +3857,7 @@ input {
 }
 
 .slider_video_page {
-	width: 70%;
+	width: 85%;
 	margin: auto;
 	.gird_video_item {
 		width: 100%;
@@ -3879,6 +3898,7 @@ input {
 		transition: 0.3s;
 		z-index: 1;
 		opacity: 0;
+		top: 41%;
 		&:before {
 			display: none;
 		}
@@ -3886,6 +3906,7 @@ input {
 	.slick-next {
 		transition: 0.3s;
 		z-index: 1;
+		top: 41%;
 		opacity: 0;
 		&:before {
 			display: none;
@@ -3954,10 +3975,7 @@ input {
 				font-weight: normal;
 				font-size: 16px;
 				line-height: 19px;
-				/* identical to box height */
-
-
-				color: #5A5A5A;
+				color: #a8a8a8;
 				img{
 					margin-right: 10px;
 				}
@@ -4238,6 +4256,7 @@ input {
 	flex-flow: row wrap;
 	justify-content: space-between;
 	align-items: center;
+	margin-top: 50px;
 	.col_counter {
 		width: auto;
 		text-align: center;

@@ -1,15 +1,30 @@
 var $status = $('.pagingInfo');
 var $slickElement = $('.slider_products');
 
-$slickElement.on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
-      //currentSlide is undefined on init -- set it to 0 in this case (currentSlide is 0 based)
-      if(!slick.$dots){
-        return;
-      }
+var chieurong = $(window).width();
+if (chieurong < 991) {
+  $slickElement.on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
+    if(!slick.$dots){
+      return;
+    }
       
-      var i = (currentSlide ? currentSlide : 0) + 1;
-      $status.text('0' + i + '/' + '0' +(slick.$dots[0].children.length));
-    });
+    var i = (currentSlide ? currentSlide : 0) + 1;
+    $status.text('0' + i + '/' + '0' +(slick.$dots[0].children.length));
+  });
+}
+
+var chieurong1 = $(window).width();
+if (chieurong1 > 991) {
+  $slickElement.on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
+    if(!slick.$dots){
+      return;
+    }
+      
+    var i = (currentSlide ? currentSlide : 2) + 1;
+    $status.text('0' + i + '/' + '0' +(slick.$dots[0].children.length));
+  });
+}
+
 
 $slickElement.slick({
   infinite: false,
@@ -38,6 +53,7 @@ $slickElement.slick({
 });
 
 /**/
+
 $(document).ready(function() {
   var $slider = $('.slider_products');
   var $progressBar = $('.progress');
@@ -47,7 +63,7 @@ $(document).ready(function() {
     var calc = ( ( (nextSlide) / (slick.slideCount-1) ) * 100 ) ;
     console.log(currentSlide);
     $progressBar
-    .css('background-size', calc + '% 100%')
+    .css('background-size', (calc + 30) + '% 100%')
     .attr('aria-valuenow', calc );
     
     $progressBarLabel.text( calc + '% completed' );
@@ -185,7 +201,7 @@ $(document).ready(function() {
   $('.slider_giaithuong').slick({
     dots: false,
     slidesToShow: 4,
-    autoplay: true,
+    autoplay: false,
     prevArrow: "<button class='prev slick-prev'><img class='left-arrow ' src='./assets/img/next5.png' alt=''></button>",
     nextArrow: "<button class='next slick-next'><img class='right-arrow ' src='./assets/img/next6.png' alt=''></button>",
     responsive: [

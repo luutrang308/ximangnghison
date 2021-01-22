@@ -399,6 +399,10 @@ input:focus::placeholder {
   text-transform: uppercase;
   color: #00178D;
   margin: 0;
+  width: auto;
+  display: table-cell;
+  background: #fff;
+  padding-right: 20px;
 }
 
 .description {
@@ -853,7 +857,7 @@ input:focus::placeholder {
 }
 
 .nav-tabs > li {
-  margin: 0 10px;
+  margin: 0 20px;
 }
 
 .nav-tabs.nav_tabs > li > a {
@@ -1224,7 +1228,7 @@ input:focus::placeholder {
   position: fixed;
   display: grid;
   right: 15%;
-  bottom: 150px;
+  bottom: 50px;
   z-index: 1000;
 }
 .section_icon a {
@@ -1286,6 +1290,9 @@ input:focus::placeholder {
 }
 .box_product:hover .box_hover {
   opacity: 1;
+}
+.box_product:hover .box_basic .img span {
+  opacity: 0;
 }
 .box_product .box_basic {
   overflow: hidden;
@@ -1800,7 +1807,6 @@ input:focus::placeholder {
 }
 
 .section-info-page {
-  background: #F6F6F6;
   z-index: -3;
   padding-bottom: 50px;
 }
@@ -1991,7 +1997,7 @@ input:focus::placeholder {
   opacity: 1;
 }
 .slider_giaithuong:hover .slick-next {
-  right: 19px;
+  right: 0px;
 }
 .slider_giaithuong:hover .slick-prev {
   left: 0;
@@ -2001,6 +2007,12 @@ input:focus::placeholder {
 }
 .slider_giaithuong .slick-prev:before, .slider_giaithuong .slick-next:before {
   display: none;
+}
+.slider_giaithuong .item img {
+  margin: auto;
+}
+.slider_giaithuong .slick-list {
+  margin: 0 -15px;
 }
 
 .section_giaithuong {
@@ -2232,6 +2244,7 @@ input:focus::placeholder {
 .title_style_1 span {
   background: #fff;
   z-index: 1;
+  padding-right: 20px;
 }
 
 .element_content_detail {
@@ -2445,7 +2458,7 @@ input:focus::placeholder {
 }
 
 .page_color {
-  background: #E5E5E5;
+  background: #F6F6F6;
 }
 .page_color .title_style_1 span {
   background: transparent;
@@ -3631,7 +3644,7 @@ input:focus::placeholder {
 }
 
 .slider_video_page {
-  width: 70%;
+  width: 85%;
   margin: auto;
 }
 .slider_video_page .gird_video_item {
@@ -3671,6 +3684,7 @@ input:focus::placeholder {
   transition: 0.3s;
   z-index: 1;
   opacity: 0;
+  top: 41%;
 }
 .slider_video_page .slick-prev:before {
   display: none;
@@ -3678,6 +3692,7 @@ input:focus::placeholder {
 .slider_video_page .slick-next {
   transition: 0.3s;
   z-index: 1;
+  top: 41%;
   opacity: 0;
 }
 .slider_video_page .slick-next:before {
@@ -3738,8 +3753,7 @@ input:focus::placeholder {
   font-weight: normal;
   font-size: 16px;
   line-height: 19px;
-  /* identical to box height */
-  color: #5A5A5A;
+  color: #a8a8a8;
 }
 .list_grid_img .gird_img_item .tex span img {
   margin-right: 10px;
@@ -4010,6 +4024,7 @@ input:focus::placeholder {
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
+  margin-top: 50px;
 }
 .countdown_about .col_counter {
   width: auto;
