@@ -167,6 +167,7 @@ input:focus::placeholder {
 }
 .section_header .row .main_menu .show_menu_search .search_form .btn_search img {
   filter: invert(1);
+  margin-right: 15px;
 }
 .section_header .row .main_menu .show_menu_search .submenu_page {
   left: -270px !important;
@@ -240,7 +241,7 @@ input:focus::placeholder {
   font-weight: normal;
   font-size: 14px;
   line-height: 16px;
-  color: #FFFFFF;
+  color: #484848;
 }
 
 .section_slider_banner {
@@ -1826,6 +1827,9 @@ input:focus::placeholder {
 }
 .section-info-page .container {
   margin-top: -19.6%;
+}
+.section-info-page .container .row {
+  margin: 0 -30px;
 }
 
 .bg-img {
@@ -3430,7 +3434,7 @@ input:focus::placeholder {
 .box_sanxuat .box_basic .img {
   background: #E9E9E9;
   height: 443px;
-  overflow-y: hidden;
+  overflow: hidden;
   position: relative;
 }
 .box_sanxuat .box_basic .img > img {

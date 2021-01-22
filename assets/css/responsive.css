@@ -88,6 +88,15 @@
   .section_footer .footer_item p ,.section_footer .footer_item ul li a , .section_footer .footer_item:nth-child(1) ul li p {
     font-size: 14px;
   }
+  .element_content .item {
+    width: 86%;
+  }
+  .section_header .row .main_menu li.show_submenu.show_menu_search:hover .submenu_page {
+    top: 45px;
+  }
+  .section_header .row .main_menu li.show_submenu.show_menu_search:hover:after {
+    bottom: -30px;
+  }
   .slider_news .item .content > a {
     font-size: 16px;
   }
@@ -580,9 +589,28 @@
 
 /* 375 */
 @media screen and (max-width: 570px) {
+  .box_sanxuat .box_hover {
+    opacity: 1;
+    background: rgb(0 0 0 / 60%);
+  }
+  .box_sanxuat .box_hover .btn_see_detail {
+    font-size: 14px;
+        width: 145px;
+    height: 45px;
+    line-height: 28px;
+    padding-left: 20px;
+  }
+  .box_sanxuat .box_hover .btn_see_detail img {
+    right: 20px;
+    width: 7px;
+  }
+  .box_sanxuat .box_basic .img span {
+    display: none;
+  }
   .img_gioithieu {
     width: 100%;
   }
+  
   .section_breadcrumb {
     padding: 15px;
   }
